@@ -58,6 +58,7 @@ def list_cart(limit=None):  # noqa: E501
     """
     items = []
     for key in CART:
+        # todo: support limit
         items.append(menu_controller.MENU.get(key))
     # this needs to be fixed - the cart should tell you how many of the itams there should be
     return Cart(items)
