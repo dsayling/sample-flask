@@ -66,3 +66,4 @@ tox
 
 This repository is licensed under the MIT license.
 The license can be found [here](./LICENSE).
+
