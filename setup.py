@@ -22,10 +22,10 @@ REQUIRES = [
 setup(
     name=NAME,
     version=VERSION,
-    description="ZoomFoodToo",
+    description="ZoomFood",
     author_email="",
     url="",
-    keywords=["OpenAPI", "ZoomFoodToo"],
+    keywords=["OpenAPI", "ZoomFood"],
     install_requires=REQUIRES,
     packages=find_packages(),
     package_data={'': ['openapi/openapi.yaml']},
