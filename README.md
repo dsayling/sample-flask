@@ -1,28 +1,29 @@
 # Sample Python App - Flask Server
 
-TODO: links in this document will need updating after migration to another github organization
+TODO: links in this document will need updating after migration to another github organization.
 
-[![CircleCI Build Status](https://circleci.com/gh/dsayling/sample-flask.svg?style=shield)](https://circleci.com/gh/dsayling/sample-flask) [![Software License](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/CircleCI-Public/cimg-python/master/LICENSE)
+[![CircleCI Build Status](https://circleci.com/gh/dsayling/sample-flask.svg?style=shield)](https://circleci.com/gh/dsayling/sample-flask) [![Software License](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/dsayling/sample-flask/main/LICENSE)
 
 ## Description
 
 The sample app here is designed to demonstrate a simple python CircleCI workflows.
 
-In this application we're simply installing dev python packages, with the [CircleCI python orb](https://circleci.com/developer/orbs/orb/circleci/python) and then running tests with pytest.
+In this sample pipeline, we're simply installing dev python packages, with the [CircleCI python orb](https://circleci.com/developer/orbs/orb/circleci/python), and then running tests with pytest.
 
 ## Getting Started
 
-You can see the CI pipeline for this application running [live on CircleCI](https://app.circleci.com/pipelines/github/dsayling/sample-flask?branch=main)
+You can see the CI pipeline for this application running [live on CircleCI](https://app.circleci.com/pipelines/github/dsayling/sample-flask?branch=main).
 
-Here you can find the CircleCI configuration file, aka [config.yml](https://github.com/dsayling/sample-flask/blob/main/.circleci/config.yml). These links may need to be full URLs if this is indexed outside of github.
+Here you can find the CircleCI configuration file, aka [config.yml](https://github.com/dsayling/sample-flask/blob/main/.circleci/config.yml).
 
 ## Adapting to your workflow
 
-The [config.yml](https://github.com/dsayling/sample-flask/blob/main/.circleci/config.yml) is well commented with the following tips and pointers:
+If you would like to copy the [config.yml](https://github.com/dsayling/sample-flask/blob/main/.circleci/config.yml), be sure to follow the steps below to ensure the config.yml works for your project:
 
 * Find the definition of the executor and ensure the correct version of python is used for your application via the convenience image tag on the [CircleCI Developer Hub](https://circleci.com/developer/images/image/cimg/python).
-* Find the `install-packages` command in the configuration file, here you can define an alternative `requirements.txt` file if necessary.
-* Find the `Run Tests` step and include any additional runtime arguments necessary for `pytest` or update it to the testing tool you're using, e.g. `nosetests`
+* Find the `install-packages` command in the configuration file, here you can define an alternative `requirements.txt` file, if necessary.
+* The `install-packages` command will effective run `pip install requirements.txt` as a part of your config, while automatically caching those dependencies for faster CI runs later.
+* Find the `Run Tests` step and include any additional runtime arguments necessary for `pytest` or update it to the testing tool you're using, e.g. `nosetests`.
 
 ## Build and Test Locally
 
