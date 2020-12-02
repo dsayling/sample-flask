@@ -12,9 +12,9 @@ You can see the CI pipelines for this application running [live on CircleCI](htt
 
 The definition of the workflow is contained in the CircleCI configuration file, aka [config.yml](https://github.com/dsayling/sample-flask/blob/main/.circleci/config.yml). In this sample configuration file, we're creating a workflow to simply install our required python packages, with the [CircleCI python orb](https://circleci.com/developer/orbs/orb/circleci/python), and then run tests with `pytest`, a common python testing framework.
 
-## Adapting to your workflow
+## Getting Started
 
-If you would like to copy the [config.yml](https://github.com/dsayling/sample-flask/blob/main/.circleci/config.yml), be sure to follow the steps below to ensure the config.yml works for your project:
+If you would like to copy the [config.yml](https://github.com/dsayling/sample-flask/blob/main/.circleci/config.yml) and adapt it to your project, be sure to follow the steps below to ensure the config.yml works for your project:
 
 * Find the definition of the executor and ensure the correct version of python is used for your application via the convenience image tag on the [CircleCI Developer Hub](https://circleci.com/developer/images/image/cimg/python).
 * Find the `install-packages` command in the configuration file, here you can define an alternative `requirements.txt` file, if necessary. The application here contains two `requirements.txt`, one that defines runtime requirements and another that combines the former with the additional test requirements.
