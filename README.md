@@ -6,15 +6,11 @@ TODO: links in this document will need updating after migration to another githu
 
 ## Description
 
-The sample app here is designed to demonstrate a simple python CircleCI workflow.
+The sample app here is designed to demonstrate a simple python CircleCI pipeline. CircleCI pipelines are the top-level events that contains your workflows - they can be thought of as the triggering event, e.g. when you push a commit to branch, and the workflows associated with that trigger event.
 
-In this sample workflow, we're simply installing our required python packages, with the [CircleCI python orb](https://circleci.com/developer/orbs/orb/circleci/python), and then running tests with `pytest`, a common python testing framework.
+You can see the CI pipelines for this application running [live on CircleCI](https://app.circleci.com/pipelines/github/dsayling/sample-flask?branch=main).
 
-## Getting Started
-
-You can see the CI workflow for this application running [live on CircleCI](https://app.circleci.com/pipelines/github/dsayling/sample-flask?branch=main).
-
-The definition of this workflow is contained in the CircleCI configuration file, aka [config.yml](https://github.com/dsayling/sample-flask/blob/main/.circleci/config.yml).
+The definition of the workflow is contained in the CircleCI configuration file, aka [config.yml](https://github.com/dsayling/sample-flask/blob/main/.circleci/config.yml). In this sample configuration file, we're creating a workflow to simply install our required python packages, with the [CircleCI python orb](https://circleci.com/developer/orbs/orb/circleci/python), and then run tests with `pytest`, a common python testing framework.
 
 ## Adapting to your workflow
 
