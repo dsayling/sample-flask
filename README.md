@@ -1,4 +1,4 @@
-# Sample Python App - Flask Server
+# THIS HAS BEEN MIGRATED TO THE CIRCLECI-PUBLIC NAMESPACE https://github.com/CircleCI-Public/sample-python-cfd/
 
 TODO: links in this document will need updating after migration to another github organization.
 
