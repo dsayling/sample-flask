@@ -6,7 +6,7 @@ TODO: links in this document will need updating after migration to another githu
 
 ## Description
 
-The sample app here is designed to demonstrate a simple python CircleCI pipeline. CircleCI pipelines are the top-level events that contains your workflows - they can be thought of as the triggering event, e.g. when you push a commit to branch, and the workflows associated with that trigger event.
+The sample app here is designed to demonstrate a simple python CircleCI pipeline. CircleCI pipelines are the top-level events that contains your workflows - they can be thought of as the triggering event, e.g. when you push a commit to a branch, and the workflows associated with that trigger event.
 
 You can see the CI pipelines for this application running [live on CircleCI](https://app.circleci.com/pipelines/github/dsayling/sample-flask?branch=main).
 
